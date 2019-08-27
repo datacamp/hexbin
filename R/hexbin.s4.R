@@ -57,7 +57,8 @@ hexbin <-
 	      ybnds = as.double(ybnds),
 	      dim = as.integer(c(imax, jmax)),
 	      n = as.integer(n),
-	      cID = if(IDs) integer(n) else as.integer(-1))[-(1:2)]
+	      cID = if(IDs) integer(n) else as.integer(-1),
+	      PACKAGE = "hexbin")[-(1:2)]
 
     ## cut off extraneous stuff
     if(!IDs) ans$cID <- NULL
